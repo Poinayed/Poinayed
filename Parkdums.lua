@@ -15,13 +15,14 @@ local Window = Fluent:CreateWindow({
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
     Main = Window:AddTab({ Title = "Fishing", Icon = "" }),
+    TP = Window:AddTab({ Title = "Teleport", Icon = "" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
 local Options = Fluent.Options
 
 do
-    Fluent:Notify({
+    Fluent:Notify({	
         Title = "Notification",
         Content = "This is a notification",
         SubContent = "SubContent", -- Optional
@@ -31,6 +32,11 @@ do
 
 
     Tabs.Main:AddParagraph({
+        Title = "Fishing",
+        Content = "โปรตกปลาของเบียร์ปากดำ"
+    })
+
+    Tabs.TP:AddParagraph({
         Title = "Fishing",
         Content = "โปรตกปลาของเบียร์ปากดำ"
     })
@@ -81,6 +87,490 @@ end
             })
         end
     })
+
+    Tabs.TP:AddButton({
+        Title = "Snowy Biome",
+        Description = "",
+        Callback = function()
+            Window:Dialog({
+                Title = "เกาะน้ำแข็ง",
+                Content = "",
+                Buttons = {
+                    {
+                        Title = "วาป",
+                        Callback = function()
+                            local teleport_table = {
+
+    location1 = Vector3.new(2311.8642578125, 126.81304931640625, 356.90618896484375), -- your desired position
+
+    location2 = Vector3.new(2311.8642578125, 126.81304931640625, 356.90618896484375)  -- your desired position
+
+}
+
+
+
+local tween_s = game:GetService('TweenService')
+
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+
+
+local lp = game.Players.LocalPlayer
+
+
+
+function bypass_teleport(v)
+
+    if lp.Character and 
+
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+
+        local cf = CFrame.new(v)
+
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+
+        a:Play()
+
+        -- a.Completed:Wait()
+
+        -- print('Teleporting Done!')
+
+    end
+
+end
+
+
+
+bypass_teleport(teleport_table.location1)
+
+                        end
+                    },
+                    {
+                        Title = "ไม่วาป",
+                        Callback = function()
+			    print("Confirmed the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+    Tabs.TP:AddButton({
+        Title = "Deep Waters",
+        Description = "",
+        Callback = function()
+            Window:Dialog({
+                Title = "เกาะน้ำดำ",
+                Content = "",
+                Buttons = {
+                    {
+                        Title = "วาป",
+                        Callback = function()
+                            local teleport_table = {
+
+    location1 = Vector3.new(-989.7180786132812, 123.65310668945312, -1568.054443359375), -- your desired position
+
+    location2 = Vector3.new(-989.7180786132812, 123.65310668945312, -1568.054443359375)  -- your desired position
+
+}
+
+
+
+local tween_s = game:GetService('TweenService')
+
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+
+
+local lp = game.Players.LocalPlayer
+
+
+
+function bypass_teleport(v)
+
+    if lp.Character and 
+
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+
+        local cf = CFrame.new(v)
+
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+
+        a:Play()
+
+        -- a.Completed:Wait()
+
+        -- print('Teleporting Done!')
+
+    end
+
+end
+
+
+
+bypass_teleport(teleport_table.location1)
+                        end
+                    },
+                    {
+                        Title = "ไม่วาป",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+    Tabs.TP:AddButton({
+        Title = "Ancient Ocean",
+        Description = "",
+        Callback = function()
+            Window:Dialog({
+                Title = "เกาะเอนเชี่ยน",
+                Content = "",
+                Buttons = {
+                    {
+                        Title = "วาป",
+                        Callback = function()
+                            local teleport_table = {
+
+    location1 = Vector3.new(582.2440185546875, 125.16576385498047, -2889.8330078125), -- your desired position
+
+    location2 = Vector3.new(582.2440185546875, 125.16576385498047, -2889.8330078125)  -- your desired position
+
+}
+
+
+
+local tween_s = game:GetService('TweenService')
+
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+
+
+local lp = game.Players.LocalPlayer
+
+
+
+function bypass_teleport(v)
+
+    if lp.Character and 
+
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+
+        local cf = CFrame.new(v)
+
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+
+        a:Play()
+
+        -- a.Completed:Wait()
+
+        -- print('Teleporting Done!')
+
+    end
+
+end
+
+
+
+bypass_teleport(teleport_table.location1)
+                        end
+                    },
+                    {
+                        Title = "ไม่วาป",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+    Tabs.TP:AddButton({
+        Title = "High Field",
+        Description = "",
+        Callback = function()
+            Window:Dialog({
+                Title = "เกาะหินงอก",
+                Content = "",
+                Buttons = {
+                    {
+                        Title = "วาป",
+                        Callback = function()
+                            local teleport_table = {
+
+    location1 = Vector3.new(2578.70556640625, 123.55641174316406, -3445.00830078125), -- your desired position
+
+    location2 = Vector3.new(2578.70556640625, 123.55641174316406, -3445.00830078125)  -- your desired position
+
+}
+
+
+
+local tween_s = game:GetService('TweenService')
+
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+
+
+local lp = game.Players.LocalPlayer
+
+
+
+function bypass_teleport(v)
+
+    if lp.Character and 
+
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+
+        local cf = CFrame.new(v)
+
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+
+        a:Play()
+
+        -- a.Completed:Wait()
+
+        -- print('Teleporting Done!')
+
+    end
+
+end
+
+
+
+bypass_teleport(teleport_table.location1)
+                        end
+                    },
+                    {
+                        Title = "ไม่วาป",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+    Tabs.TP:AddButton({
+        Title = "Toxic island",
+        Description = "",
+        Callback = function()
+            Window:Dialog({
+                Title = "เกาะพิษ",
+                Content = "",
+                Buttons = {
+                    {
+                        Title = "วาป",
+                        Callback = function()
+                            local teleport_table = {
+
+    location1 = Vector3.new(4678.83251953125, 125.359130859375, -2453.92578125), -- your desired position
+
+    location2 = Vector3.new(4678.83251953125, 125.359130859375, -2453.92578125)  -- your desired position
+
+}
+
+
+
+local tween_s = game:GetService('TweenService')
+
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+
+
+local lp = game.Players.LocalPlayer
+
+
+
+function bypass_teleport(v)
+
+    if lp.Character and 
+
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+
+        local cf = CFrame.new(v)
+
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+
+        a:Play()
+
+        -- a.Completed:Wait()
+
+        -- print('Teleporting Done!')
+
+    end
+
+end
+
+
+
+bypass_teleport(teleport_table.location1)
+                        end
+                    },
+                    {
+                        Title = "ไม่วาป",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+    Tabs.TP:AddButton({
+        Title = "Default Isle",
+        Description = "",
+        Callback = function()
+            Window:Dialog({
+                Title = "เกาะเรื่่มต้น",
+                Content = "",
+                Buttons = {
+                    {
+                        Title = "วาป",
+                        Callback = function()
+                            local teleport_table = {
+
+    location1 = Vector3.new(766.1470947265625, 124.73839569091797, -230.3459014892578), -- your desired position
+
+    location2 = Vector3.new(766.1470947265625, 124.73839569091797, -230.3459014892578)  -- your desired position
+
+}
+
+
+
+local tween_s = game:GetService('TweenService')
+
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+
+
+local lp = game.Players.LocalPlayer
+
+
+
+function bypass_teleport(v)
+
+    if lp.Character and 
+
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+
+        local cf = CFrame.new(v)
+
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+
+        a:Play()
+
+        -- a.Completed:Wait()
+
+        -- print('Teleporting Done!')
+
+    end
+
+end
+
+
+
+bypass_teleport(teleport_table.location1)
+                        end
+                    },
+                    {
+                        Title = "ไม่วาป",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+    Tabs.TP:AddButton({
+        Title = "Vulcano Isle",
+        Description = "",
+        Callback = function()
+            Window:Dialog({
+                Title = "เกาะลาวา",
+                Content = "",
+                Buttons = {
+                    {
+                        Title = "วาป",
+                        Callback = function()
+                            local teleport_table = {
+
+    location1 = Vector3.new(231.9981231689453, 125.65837860107422, 902.8037109375), -- your desired position
+
+    location2 = Vector3.new(231.9981231689453, 125.65837860107422, 902.8037109375)  -- your desired position
+
+}
+
+
+
+local tween_s = game:GetService('TweenService')
+
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+
+
+local lp = game.Players.LocalPlayer
+
+
+
+function bypass_teleport(v)
+
+    if lp.Character and 
+
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+
+        local cf = CFrame.new(v)
+
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+
+        a:Play()
+
+        -- a.Completed:Wait()
+
+        -- print('Teleporting Done!')
+
+    end
+
+end
+
+
+
+bypass_teleport(teleport_table.location1)
+                        end
+                    },
+                    {
+                        Title = "ไม่วาป",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+
+    local Dropdown = Tabs.Main:AddDropdown("Dropdown", {
+        Title = "ชื่อเกาะต่างๆ",
+        Values = {"Snowy Biome", "Deep Waters", "Ancient Ocean", "High Field", "Toxic island", "Default Isle", "Vulcano Isle"},
+        Multi = false,
+        Default = 1,
+    })
+
+    Dropdown:SetValue("Snowy Biome")
+
+    Dropdown:OnChanged(function(Value)
+        print("Dropdown changed:", Value)
+    end)
 
 
     Keybind:OnClick(function()
